@@ -1,5 +1,6 @@
 // Color Palette
 $primary-color: #015891;
+$primary-color-darken: #014776;
 $secondary-color: #fdf2e9;
 $primary-text-color: #1c1c1c;
 $secondary-text-color: rgba(32, 32, 32, 0.429);
@@ -44,7 +45,7 @@ $button-font-size-medium: 1.8rem;
 $button-font-size-large: 2rem;
 
 // Container
-$max-container-width: 120rem;
+$max-container-width: 130rem;
 .container {
   width: 100%; // Use the full width
   max-width: $max-container-width; // Don't exceed the maximum width

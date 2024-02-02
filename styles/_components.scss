@@ -11,6 +11,10 @@
   padding: $button-padding-large;
   border-radius: $border-small;
   letter-spacing: 0.5px;
+  &:hover,
+  &:active {
+    background: $primary-color-darken;
+  }
 }
 
 .btn--secondary,
@@ -18,6 +22,11 @@
 .btn-secondary:visited {
   background: $white-color;
   color: $primary-text-color;
+  &:hover,
+  &:active {
+    background: none;
+    box-shadow: inset 0 0 0 3px $white-color;
+  }
 }
 
 .btn--cta,
@@ -49,7 +58,7 @@
   }
 
   .navbar-logo img {
-    height: 2.2rem;
+    height: 2.5rem;
   }
 
   .main-nav {
