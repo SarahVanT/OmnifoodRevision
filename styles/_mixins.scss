@@ -1,0 +1,13 @@
+@mixin grid-two-columns($gap: $spacing-sm) {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: $gap;
+  align-items: center;
+}
+
+@mixin grid-three-columns($gap: $spacing-sm) {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: $gap;
+  align-items: center;
+}

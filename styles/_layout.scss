@@ -1,0 +1,24 @@
+@import "_mixins.scss";
+
+.section-hero {
+  background: $secondary-color;
+  padding: $spacing-xxxl 0;
+
+  .hero {
+    max-width: 130rem;
+    @include grid-two-columns($spacing-xl);
+    padding: 0 $spacing-xxl;
+    &-img-box img {
+      width: 100%;
+    }
+  }
+}
+
+// .two-column-layout {
+//   ;
+// }
+
+// Example usage of the 3-column grid mixin
+// .three-column-layout {
+//   @include grid-three-columns;
+// }

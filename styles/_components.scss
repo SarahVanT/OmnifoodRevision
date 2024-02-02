@@ -1,0 +1,75 @@
+// Button
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  background: $primary-color;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: $button-font-size-medium;
+  padding: $button-padding-large;
+  border-radius: $border-small;
+  letter-spacing: 0.5px;
+}
+
+.btn--secondary,
+.btn--secondary:link,
+.btn-secondary:visited {
+  background: $white-color;
+  color: $primary-text-color;
+}
+
+.btn--cta,
+.btn--cta:link,
+.btn-cta:visited {
+  padding: $button-padding-medium;
+}
+
+.btn-grouping {
+  display: flex;
+  gap: $spacing-sm;
+}
+
+// Header
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $secondary-color;
+  height: 9.6rem;
+  padding: 0 4.8rem;
+
+  .container {
+    max-width: $max-container-width;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar-logo img {
+    height: 2.2rem;
+  }
+
+  .main-nav {
+    .main-nav-list {
+      display: flex;
+      align-items: center;
+      gap: 4.8rem;
+    }
+
+    .nav-item {
+      a {
+        padding: 12px 8px;
+        color: $primary-text-color;
+        font-weight: 500;
+        font-size: 1.8rem;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

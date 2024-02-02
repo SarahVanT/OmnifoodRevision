@@ -1,9 +1,52 @@
 // Color Palette
 $primary-color: #015891;
 $secondary-color: #fdf2e9;
+$primary-text-color: #1c1c1c;
+$secondary-text-color: rgba(32, 32, 32, 0.429);
+$white-color: #fff;
 
+// Typography
 $font-family: "Rubik", sans-serif;
 $font-size: 1.6rem;
 $heading-primary-size: 5.2rem;
 $heading-secondary-size: 4.4rem;
 $heading-tertiary-size: 3rem;
+
+// Spacing
+$spacing-xxs: 0.8rem; // 8px
+$spacing-xs: 1.6rem; // 16px
+$spacing-sm: 2.4rem; // 24px
+$spacing-md: 3.2rem; // 32px
+$spacing-lg: 4rem; // 40px
+$spacing-xl: 4.8rem; // 48px
+$spacing-xxl: 6.4rem; // 64px
+$spacing-xxxl: 8rem; // 80px
+$spacing-huge: 9.6rem; // 96px
+
+// Drop Shadows
+$shadow-small: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.24);
+$shadow-medium: 0px 4px 6px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.24);
+$shadow-large: 0px 10px 15px rgba(0, 0, 0, 0.12),
+  0px 4px 6px rgba(0, 0, 0, 0.24);
+
+// Border Radius
+$border-small: 1rem;
+$border-medium: 2.1rem;
+$border-large: 4.2rem;
+
+// Button Sizes
+$button-padding-small: 0.75rem 1.5rem;
+$button-padding-medium: 1.2rem 2.4rem;
+$button-padding-large: 1.6rem 3.2rem;
+
+$button-font-size-small: 1.6rem;
+$button-font-size-medium: 1.8rem;
+$button-font-size-large: 2rem;
+
+// Container
+$max-container-width: 120rem;
+.container {
+  width: 100%; // Use the full width
+  max-width: $max-container-width; // Don't exceed the maximum width
+  margin: 0 auto; // Center it horizontally
+}
