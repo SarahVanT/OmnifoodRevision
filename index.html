@@ -13,32 +13,37 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="container">
-        <a href="http://" class="navbar-logo">
-          <img src="logo.png" alt="Omnifood Logo" />
-        </a>
-        <!-- Spacer div -->
-        <div class="spacer" style="flex-grow: 1"></div>
+    <header class="topnav">
+      <a href="http://" class="topnav__logo">
+        <img src="logo.png" alt="Omnifood Logo" />
+      </a>
+
+      <nav>
+        <span id="nav-label" hidden>Navigation</span>
         <button
-          class="navbar-bars"
-          aria-label="Open navigation menu"
+          id="btnOpen"
+          class="topnav__open"
           aria-expanded="false"
+          aria-labelledby="nav-label"
         >
-          <i class="fa-solid fa-bars"></i>
+          <img src="img/bars-solid.svg" alt="" width="40" height="24" />
         </button>
-        <nav class="main-nav">
-          <ul class="main-nav-list">
-            <li class="nav-item"><a href="#">Meals</a></li>
-            <li class="nav-item"><a href="#">How it works</a></li>
-            <li class="nav-item"><a href="#">Pricing</a></li>
+        <div class="topnav__menu" role="dialog" aria-labelledby="nav-label">
+          <button class="topnav__close" id="btnClose" aria-label="Close">
+            <img src="/img/x-solid.svg" alt="" width="28" height="27" />
+          </button>
+          <ul class="topnav__links">
+            <li class="topnav__item"><a href="#">Meals</a></li>
+            <li class="topnav__item"><a href="#">How it works</a></li>
+            <li class="topnav__item"><a href="#">Pricing</a></li>
             <li>
               <a href="" class="btn btn--cta">Get started</a>
             </li>
           </ul>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </header>
+
     <main>
       <section class="section-hero">
         <div class="hero container">
@@ -65,10 +70,12 @@
         </div>
       </section>
     </main>
+
     <!-- Font Awesome -->
     <script
       src="https://kit.fontawesome.com/2e89d80a8b.js"
       crossorigin="anonymous"
     ></script>
+    <script src="index.js"></script>
   </body>
 </html>

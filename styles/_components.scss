@@ -1,5 +1,3 @@
-@import "_media-queries.scss";
-
 // Button
 .btn,
 .btn:link,
@@ -42,69 +40,68 @@
   gap: $spacing-sm;
 }
 
-// Header
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: $secondary-color;
-  height: 9.6rem;
-  padding: 0 4.8rem;
+// .header {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   background: $secondary-color;
+//   height: 9.6rem;
+//   padding: 0 4.8rem;
 
-  .container {
-    max-width: $max-container-width;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    .spacer {
-      flex-grow: 1;
-    }
-  }
+//   .container {
+//     max-width: $max-container-width;
+//     width: 100%;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     .spacer {
+//       flex-grow: 1;
+//     }
+//   }
 
-  .navbar-logo img {
-    height: 2.5rem;
-  }
+//   .navbar-logo img {
+//     height: 2.5rem;
+//   }
 
-  .navbar-bars {
-    background: none; /* Removes the default background */
-    border: none; /* Removes the default border */
-    padding: 0; /* Removes the default padding */
-    margin: 0; /* Resets any default margin */
-    cursor: pointer;
-    display: none;
+//   .navbar-bars {
+//     background: none;
+//     border: none;
+//     padding: 0;
+//     margin: 0;
+//     cursor: pointer;
+//     display: none;
 
-    @include tablet {
-      display: block;
-      display: flex; // Use flex instead of opacity to control visibility
-      justify-content: flex-end; // Aligns the hamburger menu to the right
-      align-items: center; // Vertically centers the hamburger icon
-      color: $primary-text-color;
-      font-size: 2.5rem;
-    }
-  }
+//     @include tablet {
+//       display: block;
+//       display: flex;
+//       justify-content: flex-end;
+//       align-items: center;
+//       color: $primary-text-color;
+//       font-size: 2.5rem;
+//     }
+//   }
 
-  .main-nav {
-    .main-nav-list {
-      display: flex;
-      align-items: center;
-      gap: 4.8rem;
-      @include tablet {
-        display: none;
-      }
-    }
+//   .main-nav {
+//     .main-nav-list {
+//       display: flex;
+//       align-items: center;
+//       gap: 4.8rem;
+//       @include tablet {
+//         display: none;
+//       }
+//     }
 
-    .nav-item {
-      a {
-        padding: 12px 8px;
-        color: $primary-text-color;
-        font-weight: 500;
-        font-size: 1.8rem;
+//     .nav-item {
+//       a {
+//         padding: 12px 8px;
+//         color: $primary-text-color;
+//         font-weight: 500;
+//         font-size: 1.8rem;
 
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-    }
-  }
-}
+//         &:hover {
+//           text-decoration: underline;
+//         }
+//       }
+//     }
+//   }
+// }

@@ -102,65 +102,6 @@ a {
   gap: 2.4rem;
 }
 
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #fdf2e9;
-  height: 9.6rem;
-  padding: 0 4.8rem;
-}
-.header .container {
-  max-width: 130rem;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.header .container .spacer {
-  flex-grow: 1;
-}
-.header .navbar-logo img {
-  height: 2.5rem;
-}
-.header .navbar-bars {
-  background: none; /* Removes the default background */
-  border: none; /* Removes the default border */
-  padding: 0; /* Removes the default padding */
-  margin: 0; /* Resets any default margin */
-  cursor: pointer;
-  display: none;
-}
-@media screen and (max-width: 768px) {
-  .header .navbar-bars {
-    display: block;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    color: #1c1c1c;
-    font-size: 2.5rem;
-  }
-}
-.header .main-nav .main-nav-list {
-  display: flex;
-  align-items: center;
-  gap: 4.8rem;
-}
-@media screen and (max-width: 768px) {
-  .header .main-nav .main-nav-list {
-    display: none;
-  }
-}
-.header .main-nav .nav-item a {
-  padding: 12px 8px;
-  color: #1c1c1c;
-  font-weight: 500;
-  font-size: 1.8rem;
-}
-.header .main-nav .nav-item a:hover {
-  text-decoration: underline;
-}
-
 .section-hero {
   background: #fdf2e9;
   padding: 8rem 0;
@@ -175,6 +116,71 @@ a {
 }
 .section-hero .hero-img-box img {
   width: 100%;
+}
+
+.topnav {
+  background: #fdf2e9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.3rem;
+}
+.topnav button {
+  background: none;
+  border: none;
+  padding: 0;
+}
+@media (width >= 40em) {
+  .topnav button {
+    display: none;
+  }
+}
+.topnav__open[aria-expanded=true] + .topnav__menu {
+  translate: 0;
+}
+@media (prefers-reduced-motion) {
+  .topnav__open[aria-expanded=true] + .topnav__menu {
+    opacity: 1;
+  }
+}
+.topnav__close {
+  display: block;
+  margin-inline-start: auto;
+  margin-block-end: 8rem;
+}
+.topnav__close img {
+  width: 3rem;
+}
+.topnav__logo img {
+  height: 2.5rem;
+}
+@media (width < 40em) {
+  .topnav__menu {
+    position: fixed;
+    inset: 0;
+    padding: 1.5rem;
+    background: #fdf2e9;
+    translate: 100vw 0;
+    transition: translate 0.5s ease-in-out;
+  }
+}
+@media (width < 40em) and (prefers-reduced-motion) {
+  .topnav__menu {
+    translate: 0;
+    opacity: 0;
+    transition: translate 500ms ease-in-out;
+  }
+}
+.topnav__links {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+@media (width < 40em) {
+  .topnav__links {
+    flex-direction: column;
+    gap: 3rem;
+  }
 }
 
 .container {
