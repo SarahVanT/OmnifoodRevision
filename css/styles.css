@@ -106,6 +106,11 @@ a {
   background: #fdf2e9;
   padding: 8rem 0;
 }
+@media screen and (max-width: 768px) {
+  .section-hero {
+    padding: 4.8rem 0;
+  }
+}
 .section-hero .hero {
   max-width: 130rem;
   display: grid;
@@ -114,13 +119,41 @@ a {
   align-items: center;
   padding: 0 6.4rem;
 }
-@media (width >= 40em) {
+@media screen and (max-width: 768px) {
   .section-hero .hero {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 4.8rem;
+    align-items: center;
     padding: 0 3.2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-hero .hero__text .heading-primary {
+    text-align: center;
+    font-size: 4.5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-hero .hero__text .btn-grouping {
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section-hero .hero-img-box {
+    display: flex;
+    justify-content: center;
   }
 }
 .section-hero .hero-img-box img {
   width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .section-hero .hero-img-box img {
+    width: 90%;
+  }
 }
 
 .topnav {
@@ -159,9 +192,9 @@ a {
 .topnav__logo img {
   height: 2.5rem;
 }
-@media (width >= 40em) {
+@media screen and (max-width: 768px) {
   .topnav__logo img {
-    height: 1.5rem;
+    height: 2rem;
   }
 }
 @media (width < 40em) {
