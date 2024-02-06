@@ -8,6 +8,9 @@
     max-width: 130rem;
     @include grid-two-columns($spacing-xl);
     padding: 0 $spacing-xxl;
+    @media (width >= 40em) {
+      padding: 0 $spacing-md;
+    }
     &-img-box img {
       width: 100%;
     }

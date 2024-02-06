@@ -114,6 +114,11 @@ a {
   align-items: center;
   padding: 0 6.4rem;
 }
+@media (width >= 40em) {
+  .section-hero .hero {
+    padding: 0 3.2rem;
+  }
+}
 .section-hero .hero-img-box img {
   width: 100%;
 }
@@ -153,6 +158,11 @@ a {
 }
 .topnav__logo img {
   height: 2.5rem;
+}
+@media (width >= 40em) {
+  .topnav__logo img {
+    height: 2rem;
+  }
 }
 @media (width < 40em) {
   .topnav__menu {

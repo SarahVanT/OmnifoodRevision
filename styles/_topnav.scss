@@ -42,6 +42,9 @@
 
   &__logo img {
     height: 2.5rem;
+    @media (width >= 40em) {
+      height: 2rem;
+    }
   }
 
   &__menu {
