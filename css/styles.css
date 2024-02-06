@@ -161,7 +161,7 @@ a {
 }
 @media (width >= 40em) {
   .topnav__logo img {
-    height: 2rem;
+    height: 1.5rem;
   }
 }
 @media (width < 40em) {
