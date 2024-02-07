@@ -28,7 +28,7 @@ a {
 }
 
 .heading-primary {
-  font-size: 5.2rem;
+  font-size: 6.2rem;
   line-height: 1.05;
   margin-bottom: 1.6rem;
 }
@@ -113,9 +113,10 @@ a {
 }
 .section-hero .hero {
   max-width: 130rem;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 4.8rem;
+  gap: 9.6rem;
   align-items: center;
   padding: 0 6.4rem;
 }
@@ -218,6 +219,11 @@ a {
   display: flex;
   gap: 3rem;
   align-items: center;
+}
+.topnav__links .topnav__item a {
+  font-size: 1.8rem;
+  color: #1c1c1c;
+  font-weight: 500;
 }
 @media (width < 40em) {
   .topnav__links {

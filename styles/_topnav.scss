@@ -67,6 +67,11 @@
     display: flex;
     gap: 3rem;
     align-items: center;
+    .topnav__item a {
+      font-size: 1.8rem;
+      color: $primary-text-color;
+      font-weight: 500;
+    }
 
     @media (width < 40em) {
       flex-direction: column;

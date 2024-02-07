@@ -10,7 +10,8 @@
 
   .hero {
     max-width: 130rem;
-    @include grid-two-columns($spacing-xl);
+    margin: 0 auto;
+    @include grid-two-columns(9.6rem);
     padding: 0 $spacing-xxl;
     @include tablet {
       @include grid-one-columns($spacing-xl);
