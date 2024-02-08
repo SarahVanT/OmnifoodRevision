@@ -1,0 +1,52 @@
+// btn
+$primary: #015891;
+$primary-hover: darken($primary, 10%);
+$btn-border-radius-sm: 1rem;
+$btn-font-size: 2rem;
+$btn-font-weight: 600;
+$btn-padding-y-sm: 0.75rem; // vertical padding
+$btn-padding-x-sm: 1.6rem; // horizontal padding
+$btn-font-size-sm: 1.6rem;
+$btn-padding-y-lg: 1.6rem; // vertical padding
+$btn-padding-x-lg: 3.2rem; // horizontal padding
+$btn-font-size-lg: 2rem;
+
+// Nav links
+
+// $nav-link-color: #1c1c1c;
+// $nav-link-hover-color: #015891;
+// $nav-link-active-color: #1c1c1c; // Bootstrap primary color for active state
+
+// body and font
+$body-color: #1c1c1c;
+$font-family: "Rubik", sans-serif;
+$font-size: 1.6rem;
+$h1-font-size: 6.2rem;
+$h2-font-size: 4.4rem;
+$h3-font-size: 3rem;
+$headings-line-height: 1.3;
+$body-line-height: 1.4;
+
+// Custom spacing values
+$spacing-xxs: 0.8rem; // 8px
+$spacing-xs: 1.6rem; // 16px
+$spacing-sm: 2.4rem; // 24px
+$spacing-md: 3.2rem; // 32px
+$spacing-lg: 4rem; // 40px
+$spacing-xl: 4.8rem; // 48px
+$spacing-xxl: 6.4rem; // 64px
+$spacing-xxxl: 8rem; // 80px
+$spacing-huge: 9.6rem; // 96px
+
+// Override the default spacers map with custom values
+$spacers: (
+  "xxs": $spacing-xxs,
+  "xs": $spacing-xs,
+  "sm": $spacing-sm,
+  "md": $spacing-md,
+  "lg": $spacing-lg,
+  "xl": $spacing-xl,
+  "xxl": $spacing-xxl,
+  "xxxl": $spacing-xxxl,
+  "huge": $spacing-huge,
+);

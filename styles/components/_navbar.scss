@@ -1,0 +1,13 @@
+.navbar {
+  background-color: #fdf2e9 !important; /* Ensure your custom style overrides Bootstrap defaults */
+  &-nav {
+    .nav-link {
+      color: #1c1c1c;
+      font-weight: 500;
+      font-size: 1.8;
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+}

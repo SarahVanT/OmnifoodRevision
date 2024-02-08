@@ -1,0 +1,13 @@
+.btn {
+  &:focus-visible {
+    outline: 3px solid black !important;
+    box-shadow: 0 0 0 6px white !important;
+  }
+}
+
+.btn-primary {
+  color: white;
+  &:hover {
+    color: white;
+  }
+}
