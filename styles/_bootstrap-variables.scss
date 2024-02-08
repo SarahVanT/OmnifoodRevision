@@ -28,6 +28,7 @@ $headings-line-height: 1.3;
 $body-line-height: 1.4;
 
 // Custom spacing values
+$spacing-0: 0;
 $spacing-xxs: 0.8rem; // 8px
 $spacing-xs: 1.6rem; // 16px
 $spacing-sm: 2.4rem; // 24px
@@ -40,6 +41,7 @@ $spacing-huge: 9.6rem; // 96px
 
 // Override the default spacers map with custom values
 $spacers: (
+  "0": $spacing-0,
   "xxs": $spacing-xxs,
   "xs": $spacing-xs,
   "sm": $spacing-sm,
