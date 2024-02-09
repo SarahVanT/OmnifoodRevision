@@ -22,3 +22,20 @@ body {
   font-weight: 400;
   color: $body-color;
 }
+
+.skip-main {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  background: $primary;
+  color: white;
+  padding: 2rem 2rem;
+  z-index: 100;
+  transition: top 0.3s;
+  text-decoration: none;
+  &:focus {
+    top: 0;
+    outline-offset: 0;
+    outline: 3.5px solid black !important;
+  }
+}

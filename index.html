@@ -19,7 +19,8 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+    <a class="skip-main" href="#main">Skip to main content</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow py-3">
       <div class="container px-sm-med px-lg-0">
         <!-- Logo: Link wrapping an image -->
         <a class="navbar-brand py-4" href="#">
@@ -55,7 +56,7 @@
             <!-- The link styled as a button -->
             <li class="nav-item">
               <a class="btn btn-primary btn-sm" href="#" role="button"
-                >Button Link</a
+                >Try for free</a
               >
             </li>
           </ul>
@@ -63,38 +64,26 @@
       </div>
     </nav>
 
-    <main>
+    <main id="main" tabindex="-1">
       <section class="hero">
-        <div class="container col-xxl-8 px-sm py-xxxl">
+        <div class="container col-9 px-sm py-huge">
           <div
-            class="row flex-xs-column-reverse flex-sm-column-reverse flex-lg-row-reverse align-items-center"
+            class="row flex-med-column align-items-center justify-content-center gap-md gap-lg-0"
           >
-            <div class="col-10 col-sm-8 col-lg-6">
-              <img
-                src="Untitled-2 (4).png"
-                alt="Enjoying food"
-                width="700"
-                class="img-fluid"
-              />
-            </div>
             <div class="col-lg-6">
-              <h1 class="heading-primary mb-xs">
+              <h1 class="heading-primary mb-xs text-center text-lg-start">
                 Every Meal<br />
                 Made for You
               </h1>
-              <!-- <h1 class="heading-primary">
-              Omnifood Provides Fresh, Customized Meals Delivered Daily
-            </h1> -->
-
-              <p class="col-lg-10 mb-lg">
+              <p
+                class="col-lg-10 mb-lg hero-description text-center text-lg-start"
+              >
                 Omnifood delivers chef-crafted, personalized meals straight to
                 your home—365 days a year.
               </p>
-              <!-- <p class="hero-description">
-              Say goodbye to meal planning. Get delicious, customized meals
-              delivered straight to your door.
-            </p> -->
-              <div class="btn-grouping">
+              <div
+                class="d-flex flex-column flex-sm-row gap-sm justify-content-center justify-content-lg-start"
+              >
                 <a href="http://" class="btn btn-primary btn-lg"
                   >Start eating well</a
                 >
@@ -102,6 +91,58 @@
                   >How it works
                   <i class="fa-solid fa-arrow-down" aria-hidden="true"></i
                 ></a>
+              </div>
+            </div>
+            <div class="col-10 col-sm-8 col-lg-6">
+              <img
+                src="Untitled-2 (4).png"
+                alt="Enjoying food"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- How it works -->
+      <section class="section-how py-huge">
+        <div class="container">
+          <!-- <span class="subheading">HOW IT WORKS</span> -->
+          <h2 class="text-center mb-xxxl">How it Works</h2>
+          <div class="container col-12 px-md">
+            <div class="row d-flex justify-content-center gap-md gap-lg-0">
+              <div class="col-6 d-flex flex-column justify-content-center">
+                <span style="color: rgba(128, 128, 128, 0.342); font-size: 5rem"
+                  >01</span
+                >
+                <h3>Tell us what you like (and what not):</h3>
+                <p class="step-description">
+                  Never again waste time thinking about what to eat! Omnifood AI
+                  will create a 100% personalized weekly meal plan just for you.
+                  It makes sure you get all the nutrients and vitamins you need,
+                  no matter what diet you follow!
+                </p>
+              </div>
+              <div class="col-6 text-center">
+                <img src="/img/Untitled-3 (3).png" alt="" class="step-img" />
+              </div>
+            </div>
+            <div
+              class="row d-flex justify-content-center gap-md gap-lg-0 mt-xl"
+            >
+              <div class="col-6 text-center">
+                <img src="/img/Untitled-3 (3).png" alt="" class="step-img" />
+              </div>
+              <div class="col-6 d-flex flex-column justify-content-center">
+                <span style="color: rgba(128, 128, 128, 0.342); font-size: 5rem"
+                  >02</span
+                >
+                <h3>Tell us what you like (and what not):</h3>
+                <p>
+                  Never again waste time thinking about what to eat! Omnifood AI
+                  will create a 100% personalized weekly meal plan just for you.
+                  It makes sure you get all the nutrients and vitamins you need,
+                  no matter what diet you follow!
+                </p>
               </div>
             </div>
           </div>
