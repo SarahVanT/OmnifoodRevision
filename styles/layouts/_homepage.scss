@@ -18,7 +18,15 @@
 // }
 
 .section-how {
+  .number-heading {
+    font-size: 8rem;
+    font-weight: 700;
+    color: rgba(128, 128, 128, 0.342);
+  }
+
   .step-description {
+    font-size: 1.8rem;
+    line-height: 3.2rem;
   }
   .step-img {
     width: 70%;
