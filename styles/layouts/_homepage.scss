@@ -68,15 +68,38 @@
   padding: 2rem;
   gap: 2rem;
   border-color: #fdf2e9;
+  box-shadow: 0 2.4rem 4.8rem 0 rgba(0, 0, 0, 0.075);
+  transition: all 0.4s;
+  &:hover {
+    transform: translateY(-1.2rem);
+    box-shadow: 0 3.2rem 6.4rem 0 rgba(155, 25, 25, 0);
+  }
   &-img-top {
-    border-bottom-left-radius: 2px;
-    border-bottom-right-radius: 2px;
+    border-radius: 6px;
+    // border-bottom-left-radius: 2px;
+    // border-bottom-right-radius: 2px;
   }
   &-body {
     padding: 0;
   }
+  &-title {
+    font-size: 2rem;
+  }
   &-text {
     font-size: 1.8rem;
     line-height: 1.8;
+  }
+}
+
+.link {
+  text-decoration: none;
+  color: #015891;
+  font-weight: 600;
+  font-size: 2rem;
+  padding: 1rem;
+  border-bottom: 2px solid transparent;
+  transition: all 0.5;
+  &:hover {
+    border-bottom: 2px solid #015891;
   }
 }
