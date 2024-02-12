@@ -34,3 +34,49 @@
     height: auto;
   }
 }
+
+.meal-info {
+  text-align: center;
+}
+
+.icon-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.icon-container {
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
+  background: #fdf2e9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  font-size: 4rem;
+}
+
+.icon-description {
+  font-size: 1.8rem;
+}
+
+.card {
+  padding: 2rem;
+  gap: 2rem;
+  border-color: #fdf2e9;
+  &-img-top {
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+  }
+  &-body {
+    padding: 0;
+  }
+  &-text {
+    font-size: 1.8rem;
+    line-height: 1.8;
+  }
+}
