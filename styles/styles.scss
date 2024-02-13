@@ -1,5 +1,7 @@
 // @import "./custom/base.scss";
+$enable-rfs: false;
 @import "../styles/bootstrap-variables";
+@import "../styles/layouts/media-queries";
 // import bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import "../styles/custom/base";

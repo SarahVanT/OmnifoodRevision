@@ -1,4 +1,9 @@
 .navbar {
+  &-brand img {
+    @include sm-phone {
+      height: 1.5rem;
+    }
+  }
   background-color: white !important; /* Ensure your custom style overrides Bootstrap defaults */
   // background-color: #fdf2e9 !important; /* Ensure your custom style overrides Bootstrap defaults */
   &-nav {
