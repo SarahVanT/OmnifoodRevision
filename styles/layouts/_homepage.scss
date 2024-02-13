@@ -156,3 +156,40 @@
     border-bottom: 2px solid #015891;
   }
 }
+
+.background-img {
+  background-image: url(/img/carissa-gan-KSXvrqKUxnc-unsplash.jpg);
+  // background-image: url(/img/pablo-merchan-montes-GFW3dJRiMsQ-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#carouselExample .carousel-inner {
+  /* Custom styling for the quote text */
+  background-color: white;
+  // padding: 8rem 10rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.quote {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #1c1c1c;
+}
+
+#carouselExample .blockquote-footer {
+  /* Custom styling for the footer/citation */
+  color: #1c1c1c; /* Bootstrap primary color for consistency */
+  margin-top: 0.5rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.line {
+  width: 100px;
+  height: 4px;
+  background-color: #e98b39;
+  margin: 32px auto 29px;
+}
