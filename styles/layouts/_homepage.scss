@@ -157,7 +157,12 @@
   }
 }
 
-.background-img {
+.company-logo {
+  opacity: 50%;
+  filter: brightness(0%);
+}
+
+.section-testimonials {
   background-image: url(/img/carissa-gan-KSXvrqKUxnc-unsplash.jpg);
   // background-image: url(/img/pablo-merchan-montes-GFW3dJRiMsQ-unsplash.jpg);
   background-size: cover;
@@ -169,8 +174,12 @@
   /* Custom styling for the quote text */
   background-color: white;
   // padding: 8rem 10rem;
-  border-radius: 10px;
+  border-radius: 3px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+blockquote {
+  padding: 3rem;
 }
 
 .quote {
@@ -190,6 +199,6 @@
 .line {
   width: 100px;
   height: 4px;
-  background-color: #e98b39;
+  background-color: #e17617;
   margin: 32px auto 29px;
 }
