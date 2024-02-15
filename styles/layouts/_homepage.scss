@@ -186,7 +186,7 @@ blockquote {
 }
 
 .heading-carousel {
-  color: #e98b39db;
+  color: #e17617;
   font-size: 2rem;
   font-weight: bold;
   @include sm-phone {
@@ -209,6 +209,12 @@ blockquote {
   margin-top: 0.5rem;
   font-size: 1.8rem;
   font-weight: 700;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 3rem;
+  height: 3rem;
 }
 
 .line {
