@@ -114,7 +114,7 @@
 
 .icon-description {
   font-size: 1.8rem;
-  line-height: 1.3;
+  line-height: 3rem;
 }
 
 .card {
@@ -184,6 +184,7 @@
 
 blockquote {
   padding: 3rem;
+  line-height: 3.2rem;
   @include sm-phone {
     padding: 0;
   }
