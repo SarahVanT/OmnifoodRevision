@@ -242,7 +242,7 @@ blockquote {
   border-radius: 0;
   box-shadow: none;
   @include sm-phone {
-    padding: 1.5rem;
+    padding: 2rem;
   }
   &:hover {
     transform: none;
