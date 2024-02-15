@@ -229,6 +229,7 @@ blockquote {
 }
 .card-plan {
   padding: 4.8rem;
+
   .card-text {
     line-height: 0;
   }
@@ -236,10 +237,15 @@ blockquote {
     font-size: 2.2rem;
   }
   &-price {
-    font-size: 4rem;
+    font-size: 6rem;
     font-weight: 600;
     color: #333;
     margin-bottom: 1.6rem;
+    span {
+      font-size: 3.5rem;
+      font-weight: 500;
+      padding-right: 0.5rem;
+    }
   }
   &-subtext {
     font-size: 1.6rem;
@@ -257,5 +263,8 @@ blockquote {
         margin-bottom: 20px;
       }
     }
+  }
+  .btn {
+    margin: 0 auto;
   }
 }
