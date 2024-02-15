@@ -4,6 +4,11 @@
       height: 1.5rem;
     }
   }
+  &-toggler {
+    font-size: 2rem;
+    color: #015891;
+    // border: #015891;
+  }
   background-color: white !important; /* Ensure your custom style overrides Bootstrap defaults */
   // background-color: #fdf2e9 !important; /* Ensure your custom style overrides Bootstrap defaults */
   &-nav {
@@ -16,4 +21,8 @@
       }
     }
   }
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3E%3Cpath stroke='%23015891' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }

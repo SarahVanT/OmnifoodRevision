@@ -39,3 +39,25 @@ body {
     outline: 3.5px solid black !important;
   }
 }
+
+.heading-secondary {
+  @include sm-phone {
+    font-size: 3rem;
+  }
+}
+
+.heading-tertiary {
+  @include sm-phone {
+    font-size: 2rem;
+  }
+}
+
+.subheading {
+  color: #e17619;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.75px;
+  @include sm-phone {
+    font-size: 1.8rem;
+  }
+}
