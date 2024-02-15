@@ -126,6 +126,10 @@
   &:hover {
     transform: translateY(-1.2rem);
     box-shadow: 0 3.2rem 6.4rem 0 rgba(155, 25, 25, 0);
+    @include sm-phone {
+      transform: none;
+      box-shadow: none;
+    }
   }
   &-img-top {
     border-radius: 6px;
@@ -235,8 +239,10 @@ blockquote {
 .card-plan {
   padding: 4.8rem;
   border-radius: 0;
-
   box-shadow: none;
+  @include sm-phone {
+    padding: 1.5rem;
+  }
   &:hover {
     transform: none;
     box-shadow: none;
