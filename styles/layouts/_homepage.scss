@@ -156,6 +156,7 @@
 blockquote {
   padding: 3rem;
   line-height: 3.2rem;
+
   @include sm-phone {
     padding: 0;
   }
@@ -266,4 +267,8 @@ blockquote {
 .section-pricing {
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.footer {
+  background: #fdf2e9;
 }
