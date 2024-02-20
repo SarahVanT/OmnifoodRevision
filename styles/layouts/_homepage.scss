@@ -269,6 +269,33 @@ blockquote {
   padding-right: 10px;
 }
 
+.test {
+  height: 18rem;
+  position: relative;
+  background-image: url("/img/download.svg");
+  background-size: cover;
+  background-position: 50% top;
+  background-repeat: no-repeat;
+}
+
+.stay-in-the-know {
+  .custom-input {
+    height: 5rem;
+    font-size: 1.8rem;
+    &:focus {
+      box-shadow: none; /* Removes Bootstrap's default focus glow */
+    }
+    @include sm-phone {
+      font-size: 1.6rem;
+    }
+  }
+  .required-asterisk {
+    color: red;
+    margin-left: 0.25rem;
+  }
+}
+
 .footer {
+  padding-top: 9rem;
   background: #fdf2e9;
 }
