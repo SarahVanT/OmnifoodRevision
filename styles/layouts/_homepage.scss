@@ -312,4 +312,21 @@ blockquote {
       margin-bottom: 1.5rem;
     }
   }
+  .bottom-links {
+    ul.list-inline {
+      li:not(:last-child) {
+        margin-right: 1.5rem;
+      }
+    }
+  }
+  .social-media-links {
+    ul.list-inline {
+      li:not(:last-child) {
+        margin-right: 1.5rem;
+      }
+    }
+    .social-media {
+      font-size: 3rem;
+    }
+  }
 }
