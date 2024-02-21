@@ -279,6 +279,11 @@ blockquote {
 }
 
 .stay-in-the-know {
+  p,
+  label {
+    font-size: 1.8rem;
+  }
+
   .custom-input {
     height: 5rem;
     font-size: 1.8rem;
@@ -298,4 +303,13 @@ blockquote {
 .footer {
   padding-top: 9rem;
   background: #fdf2e9;
+  h3 {
+    font-size: 2rem;
+    padding-bottom: 1.2rem;
+  }
+  ul.list-unstyled {
+    li:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+  }
 }
