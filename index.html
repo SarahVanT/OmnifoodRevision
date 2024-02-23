@@ -3,6 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="src/img/favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
     <title>Omnifood home page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -92,7 +111,7 @@
             <div class="col-10 col-sm-8 col-lg-6">
               <img
                 src="/img/heroImg.png"
-                alt="Enjoying food"
+                alt="Smiling woman enjoying a fresh salad, representing the satisfaction of eating healthy meals from Omnifood"
                 class="img-fluid"
               />
             </div>
@@ -125,7 +144,7 @@
             <div class="col-12 col-md-6 mb-xs mb-lg-0 text-center">
               <img
                 src="/img/Untitled-3 (3).png"
-                alt="App's interface showing the feature to select favorite dishes and dietary needs."
+                alt="Omnifood app showing the favorites selection feature with various meal options"
                 class="step-img"
               />
             </div>
@@ -136,7 +155,7 @@
             <div class="col-12 col-md-6 mb-xs mb-lg-0 text-center">
               <img
                 src="/img/Untitled-4 (1).png"
-                alt="App's interface customizing your weekly meal plan."
+                alt="Mobile app interface for customizing a meal plan"
                 class="step-img"
               />
             </div>
@@ -166,7 +185,7 @@
             <div class="col-12 col-md-6 mb-xs mb-lg-0 text-center">
               <img
                 src="/img/Untitled-5 (1).png"
-                alt="Meal schedule, displaying a prepared meal and the option to select a delivery time"
+                alt="Omnifood app schedule interface showcasing the meal delivery planning feature"
                 class="step-img"
               />
             </div>
@@ -247,7 +266,7 @@
                 <img
                   src="/img/meal-1.jpg"
                   class="card-img-top"
-                  alt="Japanese Gyozas"
+                  alt="Japanese gyozas dish as a sample meal"
                 />
                 <div class="card-body">
                   <h3 class="card-title mb-xs heading-tertiary">
@@ -266,7 +285,7 @@
                 <img
                   src="/img/meal-2.jpg"
                   class="card-img-top"
-                  alt="Avocado Salad"
+                  alt="Avocado salad, showcasing a fresh meal option available"
                 />
                 <div class="card-body">
                   <h3 class="card-title mb-xs heading-tertiary">
@@ -285,7 +304,7 @@
                 <img
                   src="/img/meal-3.png"
                   class="card-img-top"
-                  alt="Chicken Tikka Masala"
+                  alt="Chicken Tikka Masala dish to represent the variety of international cuisine offered"
                 />
                 <div class="card-body">
                   <h3 class="card-title mb-xs heading-tertiary">
@@ -594,41 +613,47 @@
       ></path>
     </svg> -->
     <section class="test mt-huge">
-      <div class="container col-10 col-md-6 mb-xxl">
+      <div class="container col-10 col-md-6 mb-huge">
         <div class="stay-in-the-know pt-xxl">
           <h2 class="text-center heading-secondary mb-xs">Stay In the Loop</h2>
-          <p class="text-center mb-lg">
+          <p class="text-center mb-sm mb-md-lg">
             Get exclusive access to deals and the latest from Omnifood!
           </p>
-          <label for="emailInput" class="form-label mb-xxs"
-            >Enter your email address here:<span class="required-asterisk"
-              >*</span
-            ></label
-          >
-          <div class="d-flex flex-column flex-md-row gap-xxs">
-            <!-- Bootstrap Flex utilities -->
-            <input
-              type="email"
-              id="emailInput"
-              class="form-control custom-input me-md-2"
-              placeholder="Example: yourname@example.com"
-              aria-describedby="button-addon"
-              required
-            />
-            <button
-              class="btn btn-primary btn-sm mt-2 mt-md-0"
-              type="button"
-              id="button-addon"
+          <form action="" id="subscription">
+            <label for="emailInput" class="form-label mb-xxs"
+              >Enter your email address here:<span class="required-asterisk"
+                >*</span
+              ></label
             >
-              Subscribe
-            </button>
-          </div>
+            <div class="d-flex flex-column flex-md-row gap-xxs">
+              <!-- Bootstrap Flex utilities -->
+              <input
+                type="email"
+                id="emailInput"
+                class="form-control custom-input me-md-2"
+                placeholder="Example: yourname@example.com"
+                aria-describedby="button-addon"
+                required
+              />
+              <button
+                class="btn btn-primary btn-sm mt-2 mt-md-0"
+                type="submit"
+                id="button-addon"
+              >
+                Subscribe
+              </button>
+            </div>
+          </form>
+          <div
+            id="messageContainer"
+            class="mt-xs text-center signup-response"
+          ></div>
         </div>
       </div>
     </section>
     <footer class="footer">
-      <div class="container col-10 pt-xxl">
-        <div class="container row justify-content-between gap-sm">
+      <div class="container col-12 col-lg-10 pt-huge">
+        <div class="container row justify-content-between gap-md gap-lg-sm">
           <div class="col-12 col-md-auto text-center text-md-start">
             <h3 class="heading-tertiary">Service</h3>
             <ul class="list-unstyled">
@@ -667,30 +692,28 @@
             <h3 class="heading-tertiary">Download our app</h3>
             <p>Manage your deliveries from anywhere, anytime.</p>
             <div
-              class="d-flex gap-sm align-items-center justify-content-center justify-content-md-start"
+              class="d-flex flex-column flex-md-row gap-sm gap-md-md align-items-center justify-content-center justify-content-md-start"
             >
               <a href="#"
                 ><img
                   width="150px"
                   src="img/googleButton.png"
-                  alt="Download from Google Play Store"
+                  alt="Download Omnifood app from Google Play"
               /></a>
               <a href="#"
                 ><img
                   width="140px"
                   src="img/appleButton.png"
-                  alt="Download from Apple App Store"
+                  alt="Download Omnifood app from Appple Store"
               /></a>
             </div>
           </div>
         </div>
         <div
-          class="col-12 text-center pt-xxl pb-xs d-flex align-items-center justify-content-between"
+          class="col-12 text-center pt-xxl pb-xs d-flex flex-column flex-md-row align-items-center justify-content-between"
         >
           <p>&copy; Omnifood 2024</p>
-          <!-- <a href="#"
-            ><img width="160px" src="logo.png" alt="Omnifood logo"
-          /></a> -->
+
           <div class="bottom-links">
             <ul class="list-inline">
               <li class="list-inline-item">
