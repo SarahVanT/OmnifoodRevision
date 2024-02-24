@@ -91,7 +91,7 @@
 .card {
   padding: 2rem;
   gap: 2rem;
-  border-color: #fdf2e9;
+  border: 1px solid #fdf2e9;
   box-shadow: 0 2.4rem 4.8rem 0 rgba(0, 0, 0, 0.075);
   transition: all 0.4s;
   &:hover {
@@ -205,16 +205,13 @@ blockquote {
   background: #fdf2e9;
 }
 
-.flexible {
-  outline: 3.5px solid #fdf2e9;
-}
-
 .card-plan {
   padding: 4.8rem;
-  border-radius: 0;
+  border-radius: 6px;
   box-shadow: none;
+  border: 3px solid #fdf2e9;
   @include sm-phone {
-    padding: 2rem;
+    padding: 3rem;
   }
   &:hover {
     transform: none;

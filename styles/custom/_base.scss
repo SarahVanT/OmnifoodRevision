@@ -23,6 +23,11 @@ body {
   color: $body-color;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 .skip-main {
   position: absolute;
   top: -100%;
