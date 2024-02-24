@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Omnifood delivers chef-crafted, personalized meals straight to your home. Enjoy healthy, organic, and diverse meal plans tailored to your tastes. Try us free today!"
+    />
+
     <link rel="icon" type="image/x-icon" href="src/img/favicon/favicon.ico" />
     <link
       rel="apple-touch-icon"
@@ -39,47 +44,49 @@
   </head>
   <body>
     <a class="skip-main" href="#main">Skip to main content</a>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow py-3">
-      <div class="container px-sm-med px-lg-0">
-        <!-- Logo: Link wrapping an image -->
-        <a class="navbar-brand py-4" href="#">
-          <img src="logo.png" alt="Omnifood logo" height="25" />
-        </a>
-        <!-- Toggler for mobile screens -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Navbar content -->
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarNav"
-        >
-          <ul class="navbar-nav d-flex align-items-center gap-sm">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Meals</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#how">How it works</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <!-- The link styled as a button -->
-            <li class="nav-item">
-              <a class="btn btn-primary btn-sm" href="#">Try for free</a>
-            </li>
-          </ul>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light shadow py-3">
+        <div class="container px-sm-med px-lg-0">
+          <!-- Logo: Link wrapping an image -->
+          <a class="navbar-brand py-4" href="#">
+            <img src="logo.png" alt="Omnifood logo" height="25" />
+          </a>
+          <!-- Toggler for mobile screens -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Navbar content -->
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav d-flex align-items-center gap-sm">
+              <li class="nav-item">
+                <a class="nav-link" href="#meal">Meals</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#how">How it works</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <!-- The link styled as a button -->
+              <li class="nav-item">
+                <a class="btn btn-primary btn-sm" href="#">Try for free</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
 
     <main id="main" tabindex="-1">
       <section class="hero">
@@ -111,7 +118,7 @@
             <div class="col-10 col-sm-8 col-lg-6">
               <img
                 src="/img/heroImg.png"
-                alt="Smiling woman enjoying a fresh salad, representing the satisfaction of eating healthy meals from Omnifood"
+                alt="Smiling woman enjoying a fresh salad."
                 class="img-fluid"
               />
             </div>
@@ -121,8 +128,6 @@
       <!-- How it works -->
       <section class="section-how" id="how">
         <div class="container col-12 my-xxl my-lg-huge">
-          <!-- <span class="subheading">HOW IT WORKS</span> -->
-
           <h2 class="text-uppercase mb-xs subheading">OUR SERVICE</h2>
 
           <h2 class="text-start mb-lg mb-md-xl heading-secondary">
@@ -132,7 +137,7 @@
             class="row flex-column-reverse flex-lg-row align-items-center justify-content-center mb-xxl"
           >
             <div class="col-12 col-lg-6 justify-content-center">
-              <span class="number-heading mb-xxs">01</span>
+              <span class="number-heading mb-xxs" aria-hidden="true">01</span>
               <h3 class="mb-s heading-tertiary">Choose Your Favorites:</h3>
               <p class="step-description col-sm-12 col-lg-10">
                 Save time and savor variety with Omnifood. We craft a weekly
@@ -152,15 +157,8 @@
           <div
             class="row flex-column flex-lg-row align-items-center justify-content-center mb-xxl"
           >
-            <div class="col-12 col-md-6 mb-xs mb-lg-0 text-center">
-              <img
-                src="/img/Untitled-4 (1).png"
-                alt="Mobile app interface for customizing a meal plan"
-                class="step-img"
-              />
-            </div>
-            <div class="col-12 col-lg-6 justify-content-center">
-              <span class="number-heading mb-xxs">02</span>
+            <div class="col-12 col-lg-6 justify-content-center order-1">
+              <span class="number-heading mb-xxs" aria-hidden="true">02</span>
               <h3 class="mb-sm heading-tertiary">Personalize Your Plan:</h3>
               <p class="step-description col-sm-12 col-lg-10">
                 Your palate, your plan! Once a week, Omnifood invites you to
@@ -168,12 +166,19 @@
                 ingredients. Flexibility is at the heart of our meal planning.
               </p>
             </div>
+            <div class="col-12 col-md-6 mb-xs mb-lg-0 text-center">
+              <img
+                src="/img/Untitled-4 (1).png"
+                alt="Mobile app interface for customizing a meal plan"
+                class="step-img"
+              />
+            </div>
           </div>
           <div
             class="row flex-column-reverse flex-lg-row align-items-center justify-content-center mb-xxl"
           >
             <div class="col-12 col-lg-6 justify-content-center">
-              <span class="number-heading mb-xxs">03</span>
+              <span class="number-heading mb-xxs" aria-hidden="true">03</span>
               <h3 class="mb-sm heading-tertiary">Savor at Your Schedule:</h3>
               <p class="step-description col-sm-12 col-lg-10">
                 Relish the flavors created by the finest chefs in your city, all
@@ -213,7 +218,7 @@
                     style="color: #e98b39"
                   ></i>
                 </div>
-                <p class="icon-heading heading-tertiary">Never cook again</p>
+                <h3 class="icon-heading heading-tertiary">Never cook again</h3>
                 <p class="icon-description text-center col-9 col-lg-12">
                   Our subscriptions cover 365 days per year, even including
                   major holidays.
@@ -227,7 +232,9 @@
                     style="color: #e98b39"
                   ></i>
                 </div>
-                <p class="icon-heading heading-tertiary">Works with any diet</p>
+                <h3 class="icon-heading heading-tertiary">
+                  Works with any diet
+                </h3>
                 <p class="icon-description col-9 col-lg-12 text-center">
                   From vegan to keto, gluten-free to allergies, our menu adapts
                   to any diet, ensuring your meals always match your lifestyle.
@@ -237,7 +244,7 @@
                 <div class="icon-container">
                   <i class="fa-solid fa-pause icon" style="color: #e98b39"></i>
                 </div>
-                <p class="icon-heading heading-tertiary">Pause any time</p>
+                <h3 class="icon-heading heading-tertiary">Pause any time</h3>
                 <p class="icon-description text-center col-9 col-lg-12">
                   Going on vacation? Just pause your subscription, and we refund
                   unused days.
@@ -251,7 +258,7 @@
         </div>
       </section>
       <!-- Sample Meals -->
-      <section class="section-how">
+      <section class="section-meals" id="meal">
         <div class="container col-12 my-xxl my-lg-huge">
           <!-- <span class="subheading">HOW IT WORKS</span> -->
 
@@ -394,12 +401,11 @@
                   class="carousel-inner px-xxl py-md px-md-huge py-md-lg"
                   aria-live="polite"
                 >
+                  <h3 class="heading-carousel text-center">
+                    Hear from Our Happy Customers
+                  </h3>
                   <div class="carousel-item active">
                     <blockquote class="text-center">
-                      <p class="mb-md heading-carousel">
-                        Hear from Our Happy Customers
-                      </p>
-
                       <p class="mb-0 quote">
                         "I got Omnifood for the whole family, and it frees up so
                         much time! Plus, everything is organic and vegan and
@@ -411,9 +417,6 @@
                   </div>
                   <div class="carousel-item">
                     <blockquote class="text-center">
-                      <p class="mb-md heading-carousel">
-                        Hear from Our Happy Customers
-                      </p>
                       <p class="mb-0 quote">
                         "Omnifood is a life saver! I just started a company, so
                         there's no time for cooking. I couldn't live without my
@@ -425,9 +428,6 @@
                   </div>
                   <div class="carousel-item">
                     <blockquote class="text-center">
-                      <p class="mb-md heading-carousel">
-                        Hear from Our Happy Customers
-                      </p>
                       <p class="mb-0 quote">
                         "Inexpensive, healthy and great-tasting meals, without
                         even having to order manually! It feels truly magical."
@@ -621,9 +621,7 @@
           </p>
           <form action="" id="subscription">
             <label for="emailInput" class="form-label mb-xxs"
-              >Enter your email address here:<span class="required-asterisk"
-                >*</span
-              ></label
+              >Enter your email address here (required):</label
             >
             <div class="d-flex flex-column flex-md-row gap-xxs">
               <!-- Bootstrap Flex utilities -->
@@ -636,7 +634,7 @@
                 required
               />
               <button
-                class="btn btn-primary btn-sm mt-2 mt-md-0"
+                class="btn btn-primary mt-2 mt-md-0"
                 type="submit"
                 id="button-addon"
               >
@@ -653,7 +651,9 @@
     </section>
     <footer class="footer">
       <div class="container col-12 col-lg-10 pt-huge">
-        <div class="container row justify-content-between gap-md gap-lg-sm">
+        <div
+          class="row justify-content-center justify-content-md-between gap-md gap-lg-sm"
+        >
           <div class="col-12 col-md-auto text-center text-md-start">
             <h3 class="heading-tertiary">Service</h3>
             <ul class="list-unstyled">
