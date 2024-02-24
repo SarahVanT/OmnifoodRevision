@@ -321,11 +321,11 @@ blockquote {
     }
   }
   .bottom-links {
-    ul.list-inline {
-      li:not(:last-child) {
-        margin-right: 1.5rem;
-      }
-    }
+    // ul {
+    //   li:not(:last-child) {
+    //     margin-right: 1.5rem;
+    //   }
+    // }
   }
   .social-media-links {
     ul.list-inline {
