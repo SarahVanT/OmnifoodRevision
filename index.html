@@ -76,7 +76,7 @@
                 <a class="nav-link" href="#how">How it works</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link" href="#price">Pricing</a>
               </li>
 
               <li class="nav-item">
@@ -468,7 +468,7 @@
           </div>
         </div>
       </section>
-      <section class="section-pricing">
+      <section class="section-pricing" id="price">
         <div class="container">
           <h2 class="text-uppercase mb-4 subheading">Pricing</h2>
           <h2 class="text-start mb-5">Choose Your Plan</h2>
@@ -613,7 +613,7 @@
       </div>
     </section>
     <footer class="footer">
-      <div class="container col-12 col-lg-10 pt-huge">
+      <div class="container col-12 col-lg-10">
         <div
           class="row justify-content-center justify-content-md-between gap-md gap-lg-sm"
         >
@@ -653,7 +653,7 @@
 
           <div class="col-md-auto ms-md-auto text-center text-md-start">
             <h3 class="heading-tertiary">Download our app</h3>
-            <p>Manage your deliveries from anywhere, anytime.</p>
+            <p class="mb-xs">Manage your deliveries from anywhere, anytime.</p>
             <div
               class="d-flex flex-column flex-md-row gap-sm gap-md-md align-items-center justify-content-center justify-content-md-start"
             >
@@ -674,11 +674,13 @@
         </div>
         <div class="row pt-lg pb-xs">
           <div
-            class="col-12 d-flex flex-column flex-md-row align-items-center justify-content-between text-center"
+            class="col-12 d-flex flex-column flex-lg-row align-items-center justify-content-between text-center"
           >
-            <p class="mb-md">&copy; Omnifood 2024</p>
-            <div class="bottom-links mb-md">
-              <ul class="d-flex flex-column flex-md-row gap-md">
+            <p>&copy; Omnifood 2024</p>
+            <div class="bottom-links">
+              <ul
+                class="d-flex flex-column flex-md-row gap-xs list-unstyled mb-0"
+              >
                 <li><a href="#">Accessibility</a></li>
                 <li><a href="#">Terms & Conditions</a></li>
                 <li><a href="#">Privacy Policy</a></li>
@@ -687,9 +689,9 @@
                 </li>
               </ul>
             </div>
-            <div class="social-media-links">
-              <ul class="list-inline">
-                <li class="list-inline-item">
+            <div class="social-media-links mt-md mt-md-0">
+              <ul class="list-unstyled mb-0 d-flex flex-row gap-lg gap-md-sm">
+                <li class="">
                   <a href="#" aria-label="Visit our Facebook page"
                     ><i
                       class="fa-brands fa-facebook social-media"
@@ -697,7 +699,7 @@
                     ></i
                   ></a>
                 </li>
-                <li class="list-inline-item">
+                <li class="">
                   <a href="#" aria-label="Visit our Instagram page"
                     ><i
                       class="fa-brands fa-square-instagram social-media"

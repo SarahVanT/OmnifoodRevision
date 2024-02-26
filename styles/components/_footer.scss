@@ -1,0 +1,26 @@
+.footer {
+  padding-top: 9rem;
+  background: #fdf2e9;
+  p {
+    font-size: 1.8rem;
+  }
+  h3 {
+    font-size: 2rem;
+    padding-bottom: 1.2rem;
+  }
+  ul.list-unstyled {
+    font-size: 1.8rem;
+    li:not(:last-child) {
+      margin-bottom: 1.5rem;
+      @include sm-phone {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  .social-media-links {
+    .social-media {
+      font-size: 3.5rem;
+    }
+  }
+}

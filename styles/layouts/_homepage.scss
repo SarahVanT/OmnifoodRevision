@@ -268,7 +268,7 @@ blockquote {
 }
 
 .test {
-  height: 18rem;
+  height: 28rem;
   position: relative;
   background-image: url("/img/wave.svg");
   background-size: cover;
@@ -299,40 +299,5 @@ blockquote {
 
   .signup-response {
     font-size: 1.8rem;
-  }
-}
-
-.footer {
-  padding-top: 9rem;
-  background: #fdf2e9;
-  h3 {
-    font-size: 2rem;
-    padding-bottom: 1.2rem;
-  }
-  ul.list-unstyled {
-    font-size: 1.8rem;
-    li:not(:last-child) {
-      margin-bottom: 1.5rem;
-      @include sm-phone {
-        margin-bottom: 2rem;
-      }
-    }
-  }
-  .bottom-links {
-    // ul {
-    //   li:not(:last-child) {
-    //     margin-right: 1.5rem;
-    //   }
-    // }
-  }
-  .social-media-links {
-    ul.list-inline {
-      li:not(:last-child) {
-        margin-right: 1.5rem;
-      }
-    }
-    .social-media {
-      font-size: 3rem;
-    }
   }
 }
